@@ -5,10 +5,14 @@ import pages.QAConcortPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 public class positiveLogintest {
+
+
     @Test
     public void positiveLoginTest(){
+
         //Bir test method olustur positiveLoginTest()
         //https://qa-environment.concorthotel.com/ adresine git
+
         Driver.getDriver().get(ConfigReader.getProperty("CHQAUrl"));
         QAConcortPage qaConcortPage=new QAConcortPage();
         //login butonuna bas
