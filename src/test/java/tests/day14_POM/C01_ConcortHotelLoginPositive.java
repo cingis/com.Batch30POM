@@ -1,4 +1,4 @@
-package tests.day14;
+package tests.day14_POM;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -6,7 +6,7 @@ import pages.ConcortHotelPage;
 import utilities.TestBase;
 
 public class C01_ConcortHotelLoginPositive extends TestBase {
-    @Test
+    @Test(groups = "birinciGrup")
     public void positiveLoginTest(){
         // 	https://www.concorthotel.com/ adresine git
         driver.get("https://www.concorthotel.com/");

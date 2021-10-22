@@ -15,7 +15,7 @@ public class negativeTest {
     //3) Login butonuna bas
     //4) Verilen senaryolar ile giris yapilamadigini test et
     QAConcortPage qaConcortPage;
-    @Test(priority = -5)
+    @Test(priority = -5, groups = "birinciGrup")
     public void yanlisSifre(){
         Driver.getDriver().get(ConfigReader.getProperty("CHQAUrl"));
         qaConcortPage=new QAConcortPage();
@@ -25,7 +25,7 @@ public class negativeTest {
         qaConcortPage.loginButonu.click();
         Assert.assertTrue(qaConcortPage.loginFailedYazisi.isDisplayed());
     }
-    @Test(dependsOnMethods = "yanlisSifre")
+    @Test(dependsOnMethods = "yanlisSifre", groups = "birinciGrup")
     public void yanlisKullanici(){
         qaConcortPage=new QAConcortPage();
         qaConcortPage.usernameKutusu.clear();
