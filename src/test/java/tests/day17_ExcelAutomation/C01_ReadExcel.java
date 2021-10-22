@@ -77,9 +77,9 @@ public class C01_ReadExcel {
         System.out.println(workbook.getSheet("Sayfa2").getPhysicalNumberOfRows()); // 5
         System.out.println(workbook.getSheet("Sayfa2").getFirstRowNum()); // 1
 
-        System.out.println(workbook.getSheet("Sheet1").getLastRowNum()); // -1
-        System.out.println(workbook.getSheet("Sheet1").getPhysicalNumberOfRows()); // 0
-        System.out.println(workbook.getSheet("Sheet1").getFirstRowNum()); // -1
+        System.out.println(workbook.getSheet("Sayfa1").getLastRowNum()); // -1
+        System.out.println(workbook.getSheet("Sayfa1").getPhysicalNumberOfRows()); // 0
+        System.out.println(workbook.getSheet("Sayfa1").getFirstRowNum()); // -1
 
     }
 
